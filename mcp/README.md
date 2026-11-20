@@ -20,6 +20,8 @@ nuclei -ut                                          # populate ~/nuclei-template
 # 2. Runtime (once, on the VM)
 python3 -m venv ~/mcp-venv
 ~/mcp-venv/bin/pip install -r mcp/requirements.txt
+# note: requirements pin mcp<2 — v2 renamed FastMCP with breaking changes;
+# if a venv already has mcp 2.x, downgrade: pip install -U 'mcp>=1.9.0,<2'
 
 # 3. Run
 ~/mcp-venv/bin/python mcp/nuclei-templates/server.py   # :8901

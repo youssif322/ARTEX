@@ -1,2 +1,4 @@
-mcp>=1.9.0
+# mcp 2.x renamed FastMCP -> MCPServer with breaking API changes;
+# these servers target the v1 API, so pin below 2.
+mcp>=1.9.0,<2
 pyyaml>=6.0
