@@ -90,12 +90,14 @@ with their own schemas. A custom tool named `lfi-check` running a pinned
 python script is approvable as one unit, and its target extraction goes
 through the same target gate.
 
-## 6. MCP servers (next step)
+## 6. MCP servers
 
-Remote tools register under System → MCP (http or sse transport). Planned for
-this fork: a nuclei template-selector MCP and a SecLists/PayloadsAllTheThings
-lookup MCP. Skills can declare `mcps:` in their frontmatter so the tools
-unlock only when the skill is loaded.
+Remote tools register under System → MCP (http or sse transport). This fork
+ships two read-only intelligence servers under `mcp/` (Kali deployment guide
+in `mcp/README.md`): `nuclei-templates` (template search/selection) and
+`seclists-lookup` (tiered wordlist recommendations). Skills can declare
+`mcps:` in their frontmatter so the tools unlock only when the skill is
+loaded (`fuzzing-methodology` does).
 
 ## Checklist for an unleashed-but-scoped engagement
 

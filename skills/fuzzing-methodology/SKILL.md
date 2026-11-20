@@ -1,6 +1,7 @@
 ---
 name: fuzzing-methodology
 description: "Invoke this skill when the task is authorized dictionary-driven discovery on a mapped target: directory and file brute force, API path discovery, hidden parameter mining, virtual host and subdomain enumeration, and backup/config file hunting — with wordlist selection by technology, ffuf tuning, calibration against false positives, and noise-budgeted execution. Not for payload-level injection testing (see sqli-deep / xss-exploitation)."
+mcps: ["seclists-lookup"]
 ---
 
 # Fuzzing Methodology (Content, Params, Hosts)
