@@ -4,8 +4,8 @@ How to run ARTEX at full depth and full automation for an authorized
 engagement — using the guard system the way it was designed, not against it.
 Everything here is configuration; nothing requires a rebuild.
 
-Companion skills: `xss-exploitation`, `sqli-deep`, `ssrf-exploitation`
-(see `skills/`).
+Companion skills: `xss-exploitation`, `sqli-deep`, `ssrf-exploitation`,
+`js-secrets-recon`, `fuzzing-methodology` (see `skills/`).
 
 ## 1. Scope first
 
